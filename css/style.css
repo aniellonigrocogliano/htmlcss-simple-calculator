@@ -9,10 +9,10 @@
 body {}
 
 .container {
-    width: 25%;
+    width: 400px;
     margin: 0 auto;
     background-color: #D1D1D1;
-    margin-top: 30px;
+    margin-top: 50px;
     border-radius: 10px;
 
 }
@@ -30,68 +30,64 @@ body {}
     text-align: end;
     font-family: 'Seven Segment';
 }
-button{
+
+button {
     border-radius: 10px;
+    align-items: stretch;
 }
 
 .tastiera {
+
     display: flex;
-    flex-flow: column wrap;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    padding: 15px;
 }
 
 .numeri {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
 }
 
 .num {
-    background-color: #BBBBBB;
-color: #000000;
     font-weight: 300;
     font-size: 30px;
-    margin: 10px;
-    height: 55px;
-    width: 55px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: calc(100% / 3 - 10px);
 
 }
 
 .operatori {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-
+    width: 25%;
 }
 
-.opo {
+.orange {
     background-color: #FF9F0A;
     color: white;
-    font-weight: 300;
-    font-size: 30px;
-
 }
-.opa {
+
+.azzurro {
     background-color: #77A8B0;
     color: white;
+}
+
+.grigio {
+    background-color: #BBBBBB;
+    color: #000000;
+}
+
+.ope {
     font-weight: 300;
     font-size: 30px;
-
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
 }
-.quadrato{
-    margin: 10px;
-    height: 55px;
-    width: 55px;
-}
-
-.rettangolo{
-    margin: 10px;
-    height: 40px;
-    width: 55px;
-}
-.btn0{
-    height: 55px;
-    width: 130px;
+.btn0 {
+    flex-grow: 1;
 }
